@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contactanos</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/contacto.css">
+    <link rel="stylesheet" href="../css/footer.css">
+    <link rel="stylesheet" href="../css/styles.css">
+</head>
+
+<body id="idbody">
+    <nav class="navbar navbar-expand-lg" style="background-color: var(--color-fondo-barra-navegacion);">
+        <div class="container">
+            <div>
+                <a class="navbar-brand" href="../index.html" style="color: goldenrod;">
+                    <img src="/img/iconoMarca.svg" alt="Icono barra de navegación" class="iconoGolden">
+                </a>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
+                aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <div class="nav-item">
+                        <img src="/img/iconoContacto.svg" alt="Icono de contacto" class="iconoNavbar">
+                        <a class="nav-link active" aria-current="page" href="./contacto.html"
+                            style="color: var(--color-texto-barra-navegacion);">Contáctanos</a>
+                    </div>
+                    <div class="nav-item">
+                        <img src="/img/iconoUsuarios.svg" alt="Icono barra de navegación" class="iconoNavbar">
+                        <a class="nav-link" href="./acercaDeNosotros.html"
+                            style="color: var(--color-texto-barra-navegacion);">Acerca de nosotros</a>
+                    </div>
+                    <div class="nav-item">
+                        <img src="/img/iconoCatalogo.svg" alt="Icono barra de navegación" class="iconoNavbar">
+                        <a class="nav-link" href="./Catalogo.html"
+                            style="color: var(--color-texto-barra-navegacion);">Catálogo</a>
+                    </div>
+                    <div class="nav-item">
+                        <img src="/img/iconoUsuario.svg" alt="Icono barra de navegación" class="iconoNavbar">
+                        <a class="nav-link" href="../CRUD/login.html"
+                            style="color: var(--color-texto-barra-navegacion);">Iniciar sesión Registrarse</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-l-6" id="dudas">
+                <h4>¿Tienes algún problema, duda, queja o sugerencia?</h4>
+            </div>
+        </div>
+    </div>
+    <div class="container LOGIN w-75 mt-1 mb-5" id="login">
+        <div class="row align-items-stretch ">
+            <div class="col bg d-none d-lg-block col-md-5 col-lg-5 col-xl-6 rounded-start">
+            </div>
+            <div class="col bg-white rounded-end p-5">
+                <div class="text-center">
+                    <img src="../img/contact_support.svg" width="48" alt="">
+                </div>
+                <h2 class="fw-bold text-center pt-3 mb-5">Contáctanos</h2>
+
+                <!-- Formulario de contacto -->
+                <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                    <input type="hidden" name="access_key" value="2660052e-0a11-4a66-9e69-5166ba5531ac">
+
+                    <div class="mb-4 position-relative">
+                        <label for="exampleInputName" class="form-label">Nombre Completo</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="../img/person-fill.svg"
+                                    alt="iconoNombreCompleto"></span>
+                            <input type="text" class="form-control" id="exampleInputName" name="fullName"
+                                placeholder="Ingresa tu nombre completo">
+                        </div>
+                        <div class="alert alert-danger mt-2 d-none" id="fullNameAlert" role="alert">
+                            El nombre completo no puede estar vacío.
+                        </div>
+                    </div>
+
+                    <div class="mb-4 position-relative">
+                        <label for="exampleInputPhone" class="form-label">Número de teléfono</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="../img/contact_phone.svg"
+                                    alt="iconoTelefono"></span>
+                            <input type="tel" class="form-control" id="exampleInputPhone" maxlength="10" minlength="10"
+                                name="cellNumber" placeholder="Ingresa tu número de teléfono">
+                        </div>
+                        <div class="alert alert-danger mt-2 d-none" id="cellNumberAlert" role="alert">
+                            Por favor ingresa un número de teléfono válido.
+                        </div>
+                    </div>
+
+                    <div class="mb-4 position-relative">
+                        <label for="exampleInputEmail1" class="form-label">Correo</label>
+                        <div class="input-group">
+                            <span class="input-group-text"><img src="../img/mail.svg" alt="iconoCorreo"></span>
+                            <input type="email" class="form-control" id="exampleInputEmail1" name="email"
+                                placeholder="Ingresa tu correo">
+                        </div>
+                        <div class="alert alert-danger mt-2 d-none" id="emailAlert" role="alert">
+                            Por favor ingresa un correo válido.
+                        </div>
+                    </div>
+
+                    <div class="mb-4 position-relative">
+                        <label for="floatingTextarea" class="form-label">Comentarios</label>
+                        <div class="input-group">
+                            <textarea class="form-control" id="floatingTextarea" name="comments"
+                                placeholder="Ingresa tus comentarios" rows="4"></textarea>
+                        </div>
+                        <div class="alert alert-danger mt-2 d-none" id="commentsAlert" role="alert">
+                            Por favor ingresa tus comentarios.
+                        </div>
+                    </div>
+                    <div class="h-captcha" data-captcha="true"></div>
+                    <div class="alert alert-danger mt-2 d-none" id="captchaAlert" role="alert">
+                        Por favor completa el captcha.
+                    </div>
+                    <div class="d-grid pt-1">
+                        <button type="submit" class="btn" id="botonEnviar">Enviar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="row p-5 text-white pb-2" style="background-color: #780000;">
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="../index.html" style="color: whitesmoke; text-decoration: none;">Inicio</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="./contacto.html" style="color: whitesmoke; text-decoration: none;">Contáctanos</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="./acercaDeNosotros.html" style="color: whitesmoke; text-decoration: none;">Acerca de
+                    nosotros</a>
+            </div>
+            <div class="col-xs-12 col-md-6 col-lg-3">
+                <a href="./Catalogo.html" style="color: whitesmoke; text-decoration: none;">Catálogo</a>
+            </div>
+
+            <hr>
+
+            <div>
+                <div class="container-redes">
+                    <div class="container-logo">
+                        <a href="#">
+                            <img class="container-logo__img" src="../img/huellitas.svg" alt="imagen">
+                        </a>
+                    </div>
+                    <div class="container-redes__social">
+                        <a class="links" href="#"><i class="fa-brands fa-facebook icon"></i></a>
+                        <a class="links" href="#"><i class="fa-brands fa-instagram icon"></i></a>
+                        <a class="links" href="#"><i class="fa-brands fa-x-twitter icon"></i></a>
+                    </div>
+                    <div class="final-container">
+                        <p>&copy; 2020 Golden Trainers</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/ac73cba268.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <script src="../js/contacto.js"></script>
+    <script src="https://web3forms.com/client/script.js" async defer></script>
+</body>
+
+</html>
