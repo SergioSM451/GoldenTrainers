@@ -14,6 +14,7 @@
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../CRUD/crud.css">
+    <link rel="shortcut icon" href="../img/IconoPerro.svg" type="image/x-icon">
 </head>
 
 <body id="paginabody">
@@ -53,6 +54,14 @@
                             <img src="/img/iconoUsuario.svg" alt="Icono barra de navegación" class="iconoNavbar">
                             <a class="nav-link" href="" style="color: var(--color-texto-barra-navegacion);">Iniciar
                                 sesión Registrarse</a>
+                        </div>
+                        <div class="nav-item">
+                            <!-- Enlace para abrir el modal -->
+                            <a class="nav-link" href="#" onclick="toggleCart(event)"
+                                style="color: var(--color-texto-barra-navegacion);">
+                                <i class="fas fa-shopping-cart "></i>
+                                <span id="cart-count" class="badge bg-danger">0</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -129,7 +138,7 @@
                         nosotros</a>
                 </div>
                 <div class="col-xs-12 col-md-6 col-lg-3">
-                    <a href="../html/Catalogo.html" style="color: whitesmoke; text-decoration: none;">Cátalogo</a>
+                    <a href="../html/Catalogo.html" style="color: whitesmoke; text-decoration: none;">Catálogo</a>
                 </div>
 
                 <hr>
@@ -158,7 +167,7 @@
                         </div>
 
                         <div class="final-container">
-                            <p>&copy; 2020 Golden Trainers</p>
+                            <p>&copy; 2024 Golden Trainers</p>
                         </div>
                     </div>
                     <!--El copyright-->

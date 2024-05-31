@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/contacto.css">
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/styles.css">
+    <link rel="shortcut icon" href="../img/IconoPerro.svg" type="image/x-icon">
 </head>
 
 <body id="idbody">
@@ -45,6 +46,14 @@
                         <img src="/img/iconoUsuario.svg" alt="Icono barra de navegación" class="iconoNavbar">
                         <a class="nav-link" href="../CRUD/login.html"
                             style="color: var(--color-texto-barra-navegacion);">Iniciar sesión Registrarse</a>
+                    </div>
+                    <div class="nav-item">
+                        <!-- Enlace para abrir el modal -->
+                        <a class="nav-link" href="#" onclick="toggleCart(event)"
+                            style="color: var(--color-texto-barra-navegacion);">
+                            <i class="fas fa-shopping-cart "></i>
+                            <span id="cart-count" class="badge bg-danger">0</span>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -163,7 +172,7 @@
                         <a class="links" href="#"><i class="fa-brands fa-x-twitter icon"></i></a>
                     </div>
                     <div class="final-container">
-                        <p>&copy; 2020 Golden Trainers</p>
+                        <p>&copy; 2024 Golden Trainers</p>
                     </div>
                 </div>
             </div>
