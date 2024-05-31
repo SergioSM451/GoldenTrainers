@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     // Función para cargar los usuarios del servidor
     const loadUsers = async () => {
         try {
-            const response = await fetch('http://localhost:8081/api/users');
+            const response = await fetch('https://golden-trainers.onrender.com/api/users');
             if (!response.ok) {
                 throw new Error('Failed to fetch users');
             }
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', async () => {
         };
 
         try {
-            const response = await fetch('http://localhost:8081/api/users', {
+            const response = await fetch('https://golden-trainers.onrender.com/api/users', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -97,7 +97,7 @@ document.addEventListener('DOMContentLoaded', async () => {
     window.deleteUser = async (index) => {
         const user = users[index];
         try {
-            const response = await fetch(`http://localhost:8081/api/users/${user.id}`, {
+            const response = await fetch(`https://golden-trainers.onrender.com/api/users/${user.id}`, {
                 method: 'DELETE'
             });
 
