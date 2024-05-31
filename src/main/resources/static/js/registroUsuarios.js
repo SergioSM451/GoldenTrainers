@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             try {
                 // Enviar la solicitud POST al backend usando async/await
-                let response = await fetch('http://localhost:8081/api/users', {
+                let response = await fetch('https://golden-trainers.onrender.com/api/users', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'

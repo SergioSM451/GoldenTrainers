@@ -38,7 +38,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
         try {
             // Enviar la solicitud POST al backend para el inicio de sesión
-            let response = await fetch('http://localhost:8081/api/users/login', {
+            let response = await fetch('https://golden-trainers.onrender.com/api/users/login', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
