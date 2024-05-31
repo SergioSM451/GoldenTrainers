@@ -23,6 +23,8 @@
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="./css/normalize.css">
 
+    <link rel="shortcut icon" href="../img/IconoPerro.svg" type="image/x-icon">
+
 
 </head>
 
@@ -64,6 +66,14 @@
                             <a class="nav-link" href="./CRUD/login.html"
                                 style="color: var(--color-texto-barra-navegacion);">Iniciar
                                 sesión Registrarse</a>
+                        </div>
+                        <div class="nav-item">
+                            <!-- Enlace para abrir el modal -->
+                            <a class="nav-link" href="#" onclick="toggleCart(event)"
+                                style="color: var(--color-texto-barra-navegacion);">
+                                <i class="fas fa-shopping-cart "></i>
+                                <span id="cart-count" class="badge bg-danger">0</span>
+                            </a>
                         </div>
                     </div>
                 </div>
@@ -133,7 +143,8 @@
                         <div class="col" id="texto1p">
                             <h2 class="card-text text-start ">Descubramos juntos</h2>
                             <p class="card-text text-start ">En Golden Trainers buscamos revolucionar la forma
-                                de educar a nuestras mascotas, para que las personas y sus perros formen un vínculo único.
+                                de educar a nuestras mascotas, para que las personas y sus perros formen un vínculo
+                                único.
                             </p>
                         </div>
 
@@ -184,7 +195,7 @@
                 <div class="card-img-overlay p-5">
                     <div class="row row-cols-1 row-cols-sm-2">
                         <div class="col columna-texto h-100">
-                            <h1 class="titulo-sabias">¿Sabias que?</h1>
+                            <h1 class="titulo-sabias">¿Sabías que?</h1>
                             <p>Los perros pueden entender hasta 165 palabras y gestos humanos? <br>
                                 Estudios científicos han demostrado que los perros domésticos poseen la habilidad de
                                 aprender
@@ -230,7 +241,7 @@
                     </ul>
                 </div>
                 <div class="bloque-llamado-accion">
-                    <h1>¿Por Que Esperar Mas?</h1>
+                    <h1>¿Por qué esperar más?</h1>
                     <p>Nuestros amigos caninos tienen la singular capacidad de alcanzar rincones emocionales que a veces
                         nos resultan inaccesibles. <br>
                         Cuanto antes comiences, más pronto podrás cosechar los frutos de una relación transformada. <br>
@@ -252,10 +263,11 @@
                 <a href="./html/contacto.html" style="color: whitesmoke; text-decoration: none;">Contáctanos</a>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="./html/acercaDeNosotros.html" style="color: whitesmoke; text-decoration: none;">Acerca de nosotros</a>
+                <a href="./html/acercaDeNosotros.html" style="color: whitesmoke; text-decoration: none;">Acerca de
+                    nosotros</a>
             </div>
             <div class="col-xs-12 col-md-6 col-lg-3">
-                <a href="./html/Catalogo.html" style="color: whitesmoke; text-decoration: none;">Cátalogo</a>
+                <a href="./html/Catalogo.html" style="color: whitesmoke; text-decoration: none;">Catálogo</a>
             </div>
 
             <hr>
@@ -284,7 +296,7 @@
                     </div>
 
                     <div class="final-container">
-                        <p>&copy; 2020 Golden Trainers</p>
+                        <p>&copy; 2024 Golden Trainers</p>
                     </div>
                 </div>
                 <!--El copyright-->

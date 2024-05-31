@@ -22,7 +22,8 @@
   <!--Link de CRUD y CSS del footer-->
   <link rel="stylesheet" href="../css/footer.css">
   <link rel="stylesheet" href="../css/styles.css">
-  <title>Acerca de Nosotros</title>
+  <title>Acerca de nosotros</title>
+  <link rel="shortcut icon" href="../img/IconoPerro.svg" type="image/x-icon">
 </head>
 
 <body>
@@ -63,6 +64,14 @@
               <a class="nav-link" href="../CRUD/login.html" style="color: var(--color-texto-barra-navegacion);">Iniciar
                 sesión Registrarse</a>
             </div>
+            <div class="nav-item">
+              <!-- Enlace para abrir el modal -->
+              <a class="nav-link" href="#" onclick="toggleCart(event)"
+                  style="color: var(--color-texto-barra-navegacion);">
+                  <i class="fas fa-shopping-cart "></i>
+                  <span id="cart-count" class="badge bg-danger">0</span>
+              </a>
+          </div>
           </div>
         </div>
       </div>
@@ -259,7 +268,7 @@
         <a href="./acercaDeNosotros.html" style="color: whitesmoke; text-decoration: none;">Acerca de nosotros</a>
       </div>
       <div class="col-xs-12 col-md-6 col-lg-3">
-        <a href="./Catalogo.html" style="color: whitesmoke; text-decoration: none;">Cátalogo</a>
+        <a href="./Catalogo.html" style="color: whitesmoke; text-decoration: none;">Catálogo</a>
       </div>
 
       <hr>
@@ -288,7 +297,7 @@
           </div>
 
           <div class="final-container">
-            <p>&copy; 2020 Golden Trainers</p>
+            <p>&copy; 2024 Golden Trainers</p>
           </div>
         </div>
         <!--El copyright-->
