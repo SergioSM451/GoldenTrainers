@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="../css/footer.css">
     <link rel="stylesheet" href="../css/styles.css">
     <link rel="stylesheet" href="../css/catalogo.css">
+    <link rel="shortcut icon" href="../img/IconoPerro.svg" type="image/x-icon">
 </head>
 
 <body id="idbody">
@@ -50,13 +51,23 @@
                             style="color: var(--color-texto-barra-navegacion);">Iniciar
                             sesión Registrarse</a>
                     </div>
+                    <div class="nav-item">
+                        <!-- Enlace para abrir el modal -->
+                        <a class="nav-link" href="#" onclick="toggleCart(event)"
+                            style="color: var(--color-texto-barra-navegacion);">
+                            <i class="fas fa-shopping-cart "></i>
+                            <span id="cart-count" class="badge bg-danger">0</span>
+                        </a>
+
+                    </div>
+
                 </div>
             </div>
         </div>
     </nav>
 
     <main>
-        <h2 class="text-center pt-4"><span id="tituloPrincipal">Catálogo</span> </h2>
+        <h2 class="text-center pt-4"><span id="tituloPrincipal">Nuestros productos</span> </h2>
         <div class="container mt-5">
             <div id="productCards" class="row">
                 <!-- Las tarjetas de productos se generarán aquí -->
@@ -66,6 +77,24 @@
 
 
     </main>
+    <!-- Modal para el carrito -->
+    <div class="modal" id="cart-modal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Carrito de compras</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body" id="cart-items">
+                    <!-- Los elementos del carrito se insertarán aquí -->
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <footer>
         <!--Inicia el Footer-->
         <div class="footer" id="footer">
